@@ -40,8 +40,8 @@ This project is a 3D T-shirt customization web application built using React, Th
 Open your browser and go to http://localhost:5173.
 
 ## Usage
-Customize T-shirt colors and textures using the interactive UI.
-Add decals and position them on the T-shirt.
+Customize T-shirt colors and textures using the interactive UI.<br>
+Add decals and position them on the T-shirt.<br>
 Visualize the customized T-shirt in a 3D environment.
 
 ## Acknowledgements
