@@ -21,9 +21,16 @@ const Home = () => {
     <AnimatePresence>
         {snap.intro && (
             <motion.section className="home" {...slideAnimation('left')}>
-                <motion.header {...slideAnimation('down')}>
-                    <img src="./threejs.png" alt="logo" className="w-8 h-8 object-contain" />
-                </motion.header>
+                <motion.div className="flex gap-2">
+                    <motion.header {...slideAnimation('down')}>
+                        <img src="./threejs.png" alt="logo" className="w-8 h-8 object-contain" />
+                    </motion.header>
+                    <motion.header {...slideAnimation('down')}>
+                        <p className="max-w-md font-normal text-amber-300 text-xl">
+                                <strong>3D AI Tshirt Customization</strong>
+                        </p>
+                    </motion.header>
+                </motion.div>
                 <motion.div className="home-content" {...headContainerAnimation}>
                     <motion.div {...headTextAnimation} >
                         <h1 className="head-text">
@@ -31,7 +38,7 @@ const Home = () => {
                         </h1>
                     </motion.div>
                     <motion.div className="flex flex-col gap-5" {...headContentAnimation}>
-                        <p className="max-w-md font-normal text-gray-600 text-base">
+                        <p className="max-w-md font-normal text-white text-base">
                             Experience the ultimate in personalization with our innovative 3D customization tool. <strong>Unleash your creativity</strong> and craft a unique shirt that perfectly reflects your style.
                         </p>
 
